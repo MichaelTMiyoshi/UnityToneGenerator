@@ -17,14 +17,7 @@ using UnityEngine;
 [RequireComponent(typeof(AudioLowPassFilter))]
 public class ToneGenerator : MonoBehaviour
 {
-//    [Range(1, 20000)]
-//    public float frequency1;
-
-//    [Range(1, 20000)]
-//    public float frequency2;
-
     //public float sampleRate = 44100;
-
     private float sampleFrequency = 48000;
     [Range(0f, 1f)]
     public float noiseRatio = 0.5f;
@@ -45,11 +38,6 @@ public class ToneGenerator : MonoBehaviour
 
     System.Random rand = new System.Random();
     AudioLowPassFilter lowPassFilter;
-
-    //    public float waveLength = 2.0f;
-
-    //    AudioSource audioSource;
-    //    TreeInstance timeIndex = 0;
 
     private void Awake()
     {
